@@ -1,0 +1,99 @@
+Name:
+  de: Mobilität und Verkehr
+  fr: Mobilité et transports 
+Description:
+  de: "Dieses Dataset präsentiert die jährlichen Zahlen der Statistik der Schweizer Städte 2023 - Mobilität und Verkehr: Strassenfahrzeuge; Weg- und Binnenpendler nach Hauptverkehrsmittel, seit 2016-2020."
+  fr: "Ce dataset présente les chiffres annuels des Statistiques des villes suisses 2023 - Mobilité et transports: Véhicules routiers; Pendulaires (sortants et intracommunaux) selon le principal moyen de transport, depuis 2016-2020."
+Publisher: 
+  - IRI: https://opendata.swiss/de/organization/bundesamt-fur-statistik-bfs
+Creator:
+  - IRI: https://opendata.swiss/de/organization/bundesamt-fur-statistik-bfs
+Contributor:
+  - IRI: https://opendata.swiss/de/organization/bundesamt-fur-statistik-bfs
+Date Created:
+  2023-04-25
+Contact Point:
+  E-Mail: info@bfs.admin.ch
+  Name: Bundesamt für Statistik BFS
+Base-URI: https://mobility.ld.admin.ch/
+Identifier: mobi
+Version: 1
+Work Status: 
+  Draft
+Visualize:
+  True
+# Optional but recommended
+Accrual Periodicity: yearly
+
+# Optional
+Namespace: mobility
+
+dimensions:
+  # required
+  GEO_NR:
+    name:
+      de: Ort
+    description:
+      de: Ort
+    dimension-type: Key Dimension
+    scale-type: nominal
+    path: http://schema.org/geo
+    data-kind: 
+      type: spatial-shape
+
+  
+  GEOM_PERIOD:
+    name:
+      de: Station
+      fr: Station
+      it: Stazione
+      en: Station
+    description:
+      de: Station der Untersuchung
+    dimension-type: Key Dimension
+    scale-type: nominal
+    path: station
+    mapping:
+      type: replace
+      replacements:
+        Bern: https://mock.ld.admin.ch/station/01
+        Zürich: https://mock.ld.admin.ch/station/02
+
+  Wert:
+    name:
+      de: Wert
+      fr: Valeur
+      it: Valore
+      en: Value
+    description:
+      de: Gemessener Wert an der Station
+    dimension-type: Measure Dimension
+    scale-type: interval
+    path: value
+    unit: kilogramm
+
+  Standardfehler:
+    name:
+      de: Standardfehler
+      fr: Erreur standard
+      it: Errore standard
+      en: Standard error
+    description:
+      de: Standardfehler des berechneten Werts
+    dimension-type: Standard Error
+    relates-to: value
+    scale-type: ratio
+    path: standardError
+    unit: percent
+
+  Status:
+    name:
+      de: Veröffentlichungsstatus
+      fr: Statut de publication
+      it: Stato di pubblicazione
+      en: State of publication
+    description:
+      de: "Status der Veröffentlichung, provisorisch oder final"
+    dimension-type: Annotation
+    scale-type: nominal
+    path: status
