@@ -29,8 +29,8 @@
     schema1:creativeWorkStatus <https://ld.admin.ch/vocabulary/CreativeWorkStatus/Draft> ;
     schema1:creator <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
     schema1:dateCreated "2024-08-26"^^xsd:date ;
-    schema1:dateModified "2024-12-20T14:35:08+00:00"^^xsd:dateTime ;
-    schema1:datePublished "2024-12-20"^^xsd:date ;
+    schema1:dateModified "2025-01-07T10:27:51+00:00"^^xsd:dateTime ;
+    schema1:datePublished "2025-01-07"^^xsd:date ;
     schema1:description "Ein Beispiel Cube, der simulierte Daten enthält"@de,
         "An example Cube containing some simulated data"@en ;
     schema1:name "Mock Cube"@de,
@@ -464,17 +464,7 @@
 
 <https://mock.ld.admin.ch/cube/mock-example/1/shape> a cube:Constraint ;
     sh:closed true ;
-    sh:property [ qudt:scaleType qudt:NominalScale ;
-            schema1:description "Status der Veröffentlichung, provisorisch oder final"@de ;
-            schema1:name "Veröffentlichungsstatus"@de,
-                "State of publication"@en,
-                "Statut de publication"@fr,
-                "Stato di pubblicazione"@it ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:Literal ;
-            sh:path mock:status ],
-        [ a cube:KeyDimension ;
+    sh:property [ a cube:KeyDimension ;
             qudt:scaleType qudt:NominalScale ;
             schema1:description "Station der Untersuchung"@de ;
             schema1:name "Station"@de,
@@ -485,6 +475,19 @@
             sh:minCount 1 ;
             sh:nodeKind sh:IRI ;
             sh:path mock:station ],
+        [ a cube:KeyDimension ;
+            qudt:scaleType qudt:OrdinalScale ;
+            schema1:description "Jahr der Erhebung"@de ;
+            schema1:name "Jahr"@de,
+                "Year"@en,
+                "An"@fr,
+                "Anno"@it ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path mock:year ;
+            meta:dataKind [ a time:GeneralDateTimeDescription ;
+                    time:unitType time:unitYear ] ],
         [ qudt:hasUnit unit:PERCENT ;
             qudt:scaleType qudt:RatioScale ;
             schema1:description "Standardfehler des berechneten Werts"@de ;
@@ -500,19 +503,6 @@
             sh:path mock:standardError ;
             meta:dimensionRelation [ a relation:StandardError ;
                     meta:relatesTo mock:value ] ],
-        [ a cube:KeyDimension ;
-            qudt:scaleType qudt:OrdinalScale ;
-            schema1:description "Jahr der Erhebung"@de ;
-            schema1:name "Jahr"@de,
-                "Year"@en,
-                "An"@fr,
-                "Anno"@it ;
-            sh:maxCount 1 ;
-            sh:minCount 1 ;
-            sh:nodeKind sh:IRI ;
-            sh:path mock:year ;
-            meta:dataKind [ a time:GeneralDateTimeDescription ;
-                    time:unitType time:unitYear ] ],
         [ a cube:MeasureDimension ;
             qudt:hasUnit unit:KiloGM ;
             qudt:scaleType qudt:IntervalScale ;
@@ -526,5 +516,15 @@
             sh:min 6.873746e+00 ;
             sh:minCount 1 ;
             sh:nodeKind sh:Literal ;
-            sh:path mock:value ] .
+            sh:path mock:value ],
+        [ qudt:scaleType qudt:NominalScale ;
+            schema1:description "Status der Veröffentlichung, provisorisch oder final"@de ;
+            schema1:name "Veröffentlichungsstatus"@de,
+                "State of publication"@en,
+                "Statut de publication"@fr,
+                "Stato di pubblicazione"@it ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:path mock:status ] .
 

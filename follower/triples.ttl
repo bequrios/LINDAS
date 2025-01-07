@@ -1,0 +1,374 @@
+@prefix cube: <https://cube.link/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix schema1: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix soc: <https://ld.admin.ch/social/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ld.admin.ch/social/cube/follower/1> a void:Dataset,
+        schema1:Dataset,
+        dcat:Dataset,
+        cube:Cube ;
+    dct:creator <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    dct:description "Follower Example Cube"@en ;
+    dct:title "Follower"@en ;
+    schema1:contributor <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    schema1:creativeWorkStatus <https://ld.admin.ch/vocabulary/CreativeWorkStatus/Draft> ;
+    schema1:creator <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    schema1:dateCreated "2025-01-07"^^xsd:date ;
+    schema1:dateModified "2025-01-07T16:02:18+00:00"^^xsd:dateTime ;
+    schema1:datePublished "2025-01-07"^^xsd:date ;
+    schema1:description "Follower Example Cube"@en ;
+    schema1:name "Follower"@en ;
+    schema1:publisher <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    schema1:version 1 ;
+    schema1:workExample <https://ld.admin.ch/application/visualize> ;
+    dcat:contactPoint [ a vcard:Organization ;
+            vcard:fn "Bundesamt für Mock Data"^^xsd:string ;
+            vcard:hasEmail "contact@mock.ld.admin.ch"^^xsd:string ] ;
+    cube:observationConstraint <https://ld.admin.ch/social/cube/follower/1/shape> ;
+    cube:observationSet <https://ld.admin.ch/social/cube/follower/1/ObservationSet> .
+
+<https://ld.admin.ch/social/cube/follower/1/ObservationSet> a cube:ObservationSet ;
+    cube:observation <https://ld.admin.ch/social/cube/follower/1/observation/Bern_Insta_2021>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Bern_Insta_2022>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Bern_Insta_2023>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Bern_X_2021>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Bern_X_2022>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Bern_X_2023>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Lausanne_Insta_2021>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Lausanne_Insta_2022>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Lausanne_Insta_2023>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Lausanne_X_2021>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Lausanne_X_2022>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Lausanne_X_2023>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Morges_Insta_2021>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Morges_Insta_2022>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Morges_Insta_2023>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Morges_X_2021>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Morges_X_2022>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Morges_X_2023>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Thun_Insta_2021>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Thun_Insta_2022>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Thun_Insta_2023>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Thun_X_2021>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Thun_X_2022>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Thun_X_2023>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Winterthur_Insta_2021>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Winterthur_Insta_2022>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Winterthur_Insta_2023>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Winterthur_X_2021>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Winterthur_X_2022>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Winterthur_X_2023>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Z%C3%BCrich_Insta_2021>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Z%C3%BCrich_Insta_2022>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Z%C3%BCrich_Insta_2023>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Z%C3%BCrich_X_2021>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Z%C3%BCrich_X_2022>,
+        <https://ld.admin.ch/social/cube/follower/1/observation/Z%C3%BCrich_X_2023> .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Bern_Insta_2021> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Bern" ;
+    soc:platform "Insta" ;
+    soc:user 232.0 ;
+    soc:year 2021.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Bern_Insta_2022> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Bern" ;
+    soc:platform "Insta" ;
+    soc:user 423.0 ;
+    soc:year 2022.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Bern_Insta_2023> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Bern" ;
+    soc:platform "Insta" ;
+    soc:user 679.0 ;
+    soc:year 2023.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Bern_X_2021> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Bern" ;
+    soc:platform "X" ;
+    soc:user 1235.0 ;
+    soc:year 2021.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Bern_X_2022> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Bern" ;
+    soc:platform "X" ;
+    soc:user 2312.0 ;
+    soc:year 2022.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Bern_X_2023> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Bern" ;
+    soc:platform "X" ;
+    soc:user 6345.0 ;
+    soc:year 2023.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Lausanne_Insta_2021> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Lausanne" ;
+    soc:platform "Insta" ;
+    soc:user 12354.0 ;
+    soc:year 2021.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Lausanne_Insta_2022> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Lausanne" ;
+    soc:platform "Insta" ;
+    soc:user 213.0 ;
+    soc:year 2022.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Lausanne_Insta_2023> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Lausanne" ;
+    soc:platform "Insta" ;
+    soc:user 12551.0 ;
+    soc:year 2023.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Lausanne_X_2021> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Lausanne" ;
+    soc:platform "X" ;
+    soc:user 89.0 ;
+    soc:year 2021.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Lausanne_X_2022> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Lausanne" ;
+    soc:platform "X" ;
+    soc:user 789.0 ;
+    soc:year 2022.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Lausanne_X_2023> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Lausanne" ;
+    soc:platform "X" ;
+    soc:user 78987.0 ;
+    soc:year 2023.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Morges_Insta_2021> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Morges" ;
+    soc:platform "Insta" ;
+    soc:user 2397.0 ;
+    soc:year 2021.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Morges_Insta_2022> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Morges" ;
+    soc:platform "Insta" ;
+    soc:user 7980.0 ;
+    soc:year 2022.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Morges_Insta_2023> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Morges" ;
+    soc:platform "Insta" ;
+    soc:user 7388.0 ;
+    soc:year 2023.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Morges_X_2021> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Morges" ;
+    soc:platform "X" ;
+    soc:user 1235.0 ;
+    soc:year 2021.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Morges_X_2022> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Morges" ;
+    soc:platform "X" ;
+    soc:user 2933.0 ;
+    soc:year 2022.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Morges_X_2023> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Morges" ;
+    soc:platform "X" ;
+    soc:user 20023.0 ;
+    soc:year 2023.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Thun_Insta_2021> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Thun" ;
+    soc:platform "Insta" ;
+    soc:user 0.0 ;
+    soc:year 2021.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Thun_Insta_2022> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Thun" ;
+    soc:platform "Insta" ;
+    soc:user 0.0 ;
+    soc:year 2022.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Thun_Insta_2023> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Thun" ;
+    soc:platform "Insta" ;
+    soc:user 0.0 ;
+    soc:year 2023.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Thun_X_2021> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Thun" ;
+    soc:platform "X" ;
+    soc:user 125.0 ;
+    soc:year 2021.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Thun_X_2022> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Thun" ;
+    soc:platform "X" ;
+    soc:user 2356.0 ;
+    soc:year 2022.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Thun_X_2023> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Thun" ;
+    soc:platform "X" ;
+    soc:user 21365.0 ;
+    soc:year 2023.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Winterthur_Insta_2021> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Winterthur" ;
+    soc:platform "Insta" ;
+    soc:user 8039.0 ;
+    soc:year 2021.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Winterthur_Insta_2022> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Winterthur" ;
+    soc:platform "Insta" ;
+    soc:user 3235.0 ;
+    soc:year 2022.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Winterthur_Insta_2023> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Winterthur" ;
+    soc:platform "Insta" ;
+    soc:user 23435.0 ;
+    soc:year 2023.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Winterthur_X_2021> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Winterthur" ;
+    soc:platform "X" ;
+    soc:user 645.0 ;
+    soc:year 2021.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Winterthur_X_2022> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Winterthur" ;
+    soc:platform "X" ;
+    soc:user 562.0 ;
+    soc:year 2022.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Winterthur_X_2023> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Winterthur" ;
+    soc:platform "X" ;
+    soc:user 234.0 ;
+    soc:year 2023.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Z%C3%BCrich_Insta_2021> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Zürich" ;
+    soc:platform "Insta" ;
+    soc:user 1223.0 ;
+    soc:year 2021.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Z%C3%BCrich_Insta_2022> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Zürich" ;
+    soc:platform "Insta" ;
+    soc:user 1245.0 ;
+    soc:year 2022.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Z%C3%BCrich_Insta_2023> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Zürich" ;
+    soc:platform "Insta" ;
+    soc:user 3555.0 ;
+    soc:year 2023.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Z%C3%BCrich_X_2021> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Zürich" ;
+    soc:platform "X" ;
+    soc:user 35132.0 ;
+    soc:year 2021.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Z%C3%BCrich_X_2022> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Zürich" ;
+    soc:platform "X" ;
+    soc:user 12555.0 ;
+    soc:year 2022.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/observation/Z%C3%BCrich_X_2023> a cube:Observation ;
+    cube:observedBy <https://register.ld.admin.ch/opendataswiss/org/office_of_Mock> ;
+    soc:municipality "Zürich" ;
+    soc:platform "X" ;
+    soc:user 21214.0 ;
+    soc:year 2023.0 .
+
+<https://ld.admin.ch/social/cube/follower/1/shape> a cube:Constraint ;
+    sh:closed true ;
+    sh:property [ a cube:KeyDimension ;
+            qudt:scaleType qudt:NominalScale ;
+            schema1:description "Name der Plattform"@de ;
+            schema1:name "Plattform"@de,
+                "Platform"@en,
+                "Plateforme"@fr,
+                "Piattaforma"@it ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path soc:platform ],
+        [ a cube:KeyDimension ;
+            qudt:scaleType qudt:NominalScale ;
+            schema1:description "Name der Gemeinde"@de ;
+            schema1:name "Gemeinde"@de,
+                "Municipality"@en,
+                "Commune"@fr,
+                "Comune"@it ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path soc:municipality ],
+        [ a cube:KeyDimension ;
+            qudt:scaleType qudt:OrdinalScale ;
+            schema1:description "Jahr der Erhebung"@de ;
+            schema1:name "Jahr"@de,
+                "Year"@en,
+                "An"@fr,
+                "Anno"@it ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:IRI ;
+            sh:path soc:year ],
+        [ a cube:MeasureDimension ;
+            qudt:scaleType qudt:RatioScale ;
+            schema1:description "Anzahl der Nutzer"@de ;
+            schema1:name "Nutzer"@de,
+                "User"@en,
+                "Utilisateur"@fr,
+                "Utente"@it ;
+            sh:max "78987" ;
+            sh:maxCount 1 ;
+            sh:min "0" ;
+            sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:path soc:user ] .
+

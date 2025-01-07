@@ -1,0 +1,75 @@
+Name:
+  en: Follower
+Description:
+  en: Follower Example Cube
+Publisher: 
+  - IRI: https://register.ld.admin.ch/opendataswiss/org/office_of_Mock
+Creator:
+  - IRI: https://register.ld.admin.ch/opendataswiss/org/office_of_Mock
+Contributor:
+  - IRI: https://register.ld.admin.ch/opendataswiss/org/office_of_Mock
+Date Created:
+  2025-01-07
+Contact Point:
+  E-Mail: contact@mock.ld.admin.ch
+  Name: Bundesamt für Mock Data
+Base-URI: https://ld.admin.ch/social/
+Identifier: follower
+Version: 1
+Work Status: 
+  Draft
+Visualize:
+  True
+
+# Optional
+Namespace: soc
+
+dimensions:
+
+  Gemeinde:
+    name:
+      de: Gemeinde
+      fr: Commune
+      it: Comune
+      en: Municipality
+    description:
+      de: Name der Gemeinde
+    dimension-type: Key Dimension
+    scale-type: nominal
+    path: municipality
+
+  Plattform:
+    name:
+      de: Plattform
+      fr: Plateforme
+      it: Piattaforma
+      en: Platform
+    description:
+      de: Name der Plattform
+    dimension-type: Key Dimension
+    scale-type: nominal
+    path: platform
+
+  Jahr:
+    name:
+      de: Jahr
+      fr: An
+      it: Anno
+      en: Year
+    description:
+      de: Jahr der Erhebung
+    dimension-type: Key Dimension
+    scale-type: ordinal
+    path: year
+
+  Nutzer:
+    name:
+      de: Nutzer
+      fr: Utilisateur
+      it: Utente
+      en: User
+    description:
+      de: Anzahl der Nutzer
+    dimension-type: Measure Dimension
+    scale-type: ratio
+    path: user

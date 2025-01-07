@@ -29,7 +29,7 @@ Accrual Periodicity: yearly
 Namespace: mobility
 
 dimensions:
-  # required
+
   GEO_NR:
     name:
       de: Ort
@@ -37,63 +37,30 @@ dimensions:
       de: Ort
     dimension-type: Key Dimension
     scale-type: nominal
-    path: http://schema.org/geo
-    data-kind: 
-      type: spatial-shape
+    path: geo
 
-  
   GEOM_PERIOD:
     name:
-      de: Station
-      fr: Station
-      it: Stazione
-      en: Station
+      de: Zeitpunkt
     description:
-      de: Station der Untersuchung
+      de: Zeitpunkt der Messung
     dimension-type: Key Dimension
     scale-type: nominal
-    path: station
-    mapping:
-      type: replace
-      replacements:
-        Bern: https://mock.ld.admin.ch/station/01
-        Zürich: https://mock.ld.admin.ch/station/02
+    path: geom_period
 
-  Wert:
+  VARIABLE:
+    name:
+      de: Messgrösse
+    description:
+      de: Was wird gemessen
+    dimension-type: Key Dimension
+    scale-type: nominal
+    path: variable
+
+  VALUE:
     name:
       de: Wert
-      fr: Valeur
-      it: Valore
-      en: Value
     description:
-      de: Gemessener Wert an der Station
+      de: Wert der Messgrösse
     dimension-type: Measure Dimension
-    scale-type: interval
-    path: value
-    unit: kilogramm
-
-  Standardfehler:
-    name:
-      de: Standardfehler
-      fr: Erreur standard
-      it: Errore standard
-      en: Standard error
-    description:
-      de: Standardfehler des berechneten Werts
-    dimension-type: Standard Error
-    relates-to: value
-    scale-type: ratio
-    path: standardError
-    unit: percent
-
-  Status:
-    name:
-      de: Veröffentlichungsstatus
-      fr: Statut de publication
-      it: Stato di pubblicazione
-      en: State of publication
-    description:
-      de: "Status der Veröffentlichung, provisorisch oder final"
-    dimension-type: Annotation
-    scale-type: nominal
-    path: status
+    scale-type: rational

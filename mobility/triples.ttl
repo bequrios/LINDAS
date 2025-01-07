@@ -1,0 +1,37 @@
+@prefix cube: <https://cube.link/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema1: <http://schema.org/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://mobility.ld.admin.ch/cube/mobi/1> a void:Dataset,
+        schema1:Dataset,
+        dcat:Dataset,
+        cube:Cube ;
+    dct:accrualPeriodicity <http://publications.europe.eu/resource/authority/frequency/ANNUAL> ;
+    dct:creator <https://opendata.swiss/de/organization/bundesamt-fur-statistik-bfs> ;
+    dct:description "Dieses Dataset präsentiert die jährlichen Zahlen der Statistik der Schweizer Städte 2023 - Mobilität und Verkehr: Strassenfahrzeuge; Weg- und Binnenpendler nach Hauptverkehrsmittel, seit 2016-2020."@de,
+        "Ce dataset présente les chiffres annuels des Statistiques des villes suisses 2023 - Mobilité et transports: Véhicules routiers; Pendulaires (sortants et intracommunaux) selon le principal moyen de transport, depuis 2016-2020."@fr ;
+    dct:title "Mobilität und Verkehr"@de,
+        "Mobilité et transports"@fr ;
+    schema1:contributor <https://opendata.swiss/de/organization/bundesamt-fur-statistik-bfs> ;
+    schema1:creativeWorkStatus <https://ld.admin.ch/vocabulary/CreativeWorkStatus/Draft> ;
+    schema1:creator <https://opendata.swiss/de/organization/bundesamt-fur-statistik-bfs> ;
+    schema1:dateCreated "2023-04-25"^^xsd:date ;
+    schema1:dateModified "2025-01-07T09:56:15+00:00"^^xsd:dateTime ;
+    schema1:datePublished "2025-01-07"^^xsd:date ;
+    schema1:description "Dieses Dataset präsentiert die jährlichen Zahlen der Statistik der Schweizer Städte 2023 - Mobilität und Verkehr: Strassenfahrzeuge; Weg- und Binnenpendler nach Hauptverkehrsmittel, seit 2016-2020."@de,
+        "Ce dataset présente les chiffres annuels des Statistiques des villes suisses 2023 - Mobilité et transports: Véhicules routiers; Pendulaires (sortants et intracommunaux) selon le principal moyen de transport, depuis 2016-2020."@fr ;
+    schema1:name "Mobilität und Verkehr"@de,
+        "Mobilité et transports"@fr ;
+    schema1:publisher <https://opendata.swiss/de/organization/bundesamt-fur-statistik-bfs> ;
+    schema1:version 1 ;
+    schema1:workExample <https://ld.admin.ch/application/visualize> ;
+    dcat:contactPoint [ a vcard:Organization ;
+            vcard:fn "Bundesamt für Statistik BFS"^^xsd:string ;
+            vcard:hasEmail "info@bfs.admin.ch"^^xsd:string ] ;
+    cube:observationConstraint <https://mobility.ld.admin.ch/cube/mobi/1/shape> ;
+    cube:observationSet <https://mobility.ld.admin.ch/cube/mobi/1/ObservationSet> .
+
